@@ -25,3 +25,11 @@ public:
         return min(mini,f(n-2,arr,dp));
     }
 };
+
+//  ***Alternate Solution***
+
+//         dp[1]=arr[0];
+//         for(int i=2;i<=n;i++){
+//             dp[i]=min(arr[i-1]+dp[i-1],arr[i-1]+dp[i-2]);
+//         }
+//         return min(dp[n-1],dp[n]);
